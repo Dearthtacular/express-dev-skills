@@ -14,6 +14,9 @@ router.get('/new', skillsCtrl.new);
 // POST request to /skills
 router.post('/', skillsCtrl.create);
 
+// DELETE request to /skills
+router.delete('/:id', skillsCtrl.delete)
+
 // GET /skills/:id
 router.get('/:id', skillsCtrl.show);
 
